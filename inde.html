@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Other cool stuff</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobirise.com">
+                         <img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap">
+                    <a class="navbar-caption text-white display-4" href="https://mobirise.com">
+                        MOBIRISE
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        About Us
+                    </a>
+                </li></ul>
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">
+                    <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
+                    Try It Now!
+                </a>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/e">make your own website for free</a></section><section class="mbr-section article content1 cid-s2rMBH7BgM" id="content1-c">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">Hi</div>
+        </div>
+    </div>
+</section>
+
+<section class="header5 cid-s2lIBlp5wt mbr-fullscreen" id="header5-4">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title align-center pb-3 mbr-fonts-style display-1"><strong>Other Cool Stuff</strong></h1>
+                <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style display-7"><strong>Notifier:</strong><br><br>import win10toast
+<br>import tkinter as tk
+<br>
+<br>def notify():
+<br>    reminder="Reminder App"
+<br>    context=input("What is your text: ")
+<br>    durat=int(input("What is the duration of your notification"))
+<br>
+<br>    toaster=win10toast.ToastNotifier()
+<br>    toaster.show_toast(reminder,context,duration=durat)
+<br>    
+<br>root=tk.Tk()
+<br>canvas=tk.Canvas(root, width=700, heigth=600)
+<br>canvas.pack()
+<br>root.mainloop()<br><br><strong>V.R:</strong><br><br>import os
+<br>import __main__
+<br>import base64
+<br>import sys
+<br>import StringIO
+<br>from Crypto import Random
+<br>from Crypto.Cipher import AES
+<br>
+<br>
+<br># Decryption function
+<br>def decrypt(data):
+<br>   this = open(__main__.__file__, 'r')
+<br>   data = base64.b64decode(data);
+<br>
+<br>   iv = Random.new().read(AES.block_size)
+<br>   cipher = AES.new(StringIO.StringIO(this).read(24), AES.MODE_CFB, iv)
+<br>
+<br>   this.close()
+<br>   return cipher.decrypt(data)[16:]
+<br>
+<br># Gets the virus file
+<br>this = open(__main__.__file__, 'r')
+<br>copy = False
+<br>
+<br>cipher_payload = ''
+<br>
+<br>for line in this:
+<br>   if line.strip() == '# Start payload':
+<br>      copy = True
+<br>   elif line.strip() == '# End payload':
+<br>      copy = False
+<br>   elif copy:
+<br>      cipher_payload = cipher_payload + line
+<br>
+<br>e = decrypt(cipher_payload[1:])
+<br>#e = encrypt(cipher_payload)
+<br>#print e
+<br>#exec e
+<br>sys.exit('Good job!')
+<br><br><strong>Translator:</strong><br><br>from googletrans import Translator 
+<br>print("What is the staring language?")
+<br>start_lang=input()
+<br>print("What is the final language?")
+<br>final_lang=input()
+<br>print("What is the sentance?")
+<br>sent=input()
+<br>
+<br>translator=Translator()
+<br>trans_sent=translator.translate(sent, src=start_lang, dest=final_lang)
+<br>print(trans_sent.text)<br><br><strong>Slave And Master To Shut Down Any P.C:</strong><br><br><strong>Slave:</strong><strong><br></strong>import time
+<br>import socket
+<br>import os
+<br>import sys
+<br>
+<br>#part 1 complete
+<br>s=socket.socket()
+<br>host="DESKTOP-4U0ASN6"
+<br>port=5050 
+<br>s.connect((host, port))
+<br>print("connected to server")
+<br>#part2
+<br>command=s.recv(1024)
+<br>command=command.decode()
+<br>#part3
+<br>if command=="shutdown":
+<br>    print("Shutdown is bieng executed")
+<br>    s.send("Command recieved".encode())
+<br>    os.system("shutdown.bat") &nbsp; &nbsp;<strong>&nbsp;&nbsp;</strong><br><br><strong>Master:</strong><br>import time
+<br>import socket
+<br>import os
+<br>import sys
+<br>#part 1
+<br>    
+<br>s=socket.socket()
+<br>host=socket.gethostname()
+<br>print(host)
+<br>port=5050 
+<br>s.bind((host,port))
+<br>print("")
+<br>print("Waiting for any incomming connections.............")
+<br>print("")
+<br>s.listen(1)
+<br>conn, addr=s.accept()
+<br>print(addr,"has connected to the server")
+<br>print("")
+<br>#part 2
+<br>
+<br>command=input(str("command: "))
+<br>conn.send(command.encode())
+<br>print("command has been sent. Waiting for a confirmation")
+<br>data=conn.recv(1024)
+<br>if data:
+<br>    print("Command has benn recieved and has been executed")<br><br><strong>Server:</strong><br><br>import socket
+<br>import threading
+<br>
+<br>HEADER=64
+<br>FORMAT='utf-8'
+<br>PORT=5050 
+<br>SERVER=socket.gethostbyname(socket.gethostname())
+<br>ADDR=(SERVER, PORT)
+<br>DISCONNECT_MESSAGE="!DISCONNECT"
+<br>
+<br>server=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+<br>server.bind(ADDR)
+<br>
+<br>def handle_client(conn, addr):
+<br>    print(f"[NEW CONNECTION] {addr} connected")
+<br>    connected=True
+<br>    while connected:
+<br>        msg_length=conn.recv(HEADER).decode(FORMAT)
+<br>        if msg_length:
+<br>            msg_length=int(msg_length)
+<br>            msg=conn.recv(msg_length).decode(FORMAT)
+<br>            if msg==DISCONNECT_MESSAGE:
+<br>                connected=False
+<br>            print(f"[{addr}] {msg}")
+<br>
+<br>        conn.close()
+<br>        
+<br>def start():
+<br>    server.listen()
+<br>    print(f"[LISTENINFG] Server is starting {SERVER}")
+<br>    while True:
+<br>        conn, addr=server.accept()
+<br>        thread=threading.Thread(target=handle_client, args=(conn, addr))
+<br>        thread.start()
+<br>        active=threading.activeCount()-1
+<br>        print(active)
+<br>
+<br>print("[STARTING] Server is starting...........")
+<br>start()<br><br><strong>Sending Email:</strong><br><br>import smtplib
+<br>import webbrowser as wb
+<br>def send_mail():
+<br>    print("Who is the sender of this email?: ")
+<br>    sender=input()
+<br>    print("What is your 16 digit passcode?: ")
+<br>    passcode=input()
+<br>    server=smtplib.SMTP('smtp.gmail.com',587)
+<br>    server.ehlo()
+<br>    server.starttls()
+<br>    server.ehlo()
+<br>    server.login(sender,passcode)
+<br>    print("What is the subject of your email?: ")
+<br>    subject=input()
+<br>    print("What is the body of your email?: ")
+<br>    body=input()
+<br>    msg=f"subject: {subject}\n\n{body}"
+<br>    print("Who is the reciever of this email?: ")
+<br>    rec=input()
+<br>    server.sendmail(
+<br>         sender,
+<br>         rec,
+<br>         msg)
+<br>    server.quit() 
+<br>    gmail="www.gmail.com"
+<br>    print("Do you want to open Gmail: ")
+<br>    x=input()
+<br>    if x=="yes":
+<br>        wb.open(gmail)
+<br>        print("This email has been sent: ")
+<br>    if x=="no":
+<br>        print('This email has been sent: ')
+<br>send_mail()
+<br>
+<br><strong><br></strong></p><p>:<br><strong>Translator</strong><br><br>from googletrans import Translator
+<br>print("What is the staring language?")
+<br>start_lang=input()
+<br>print("What is the final language?")
+<br>final_lang=input()
+<br>print("What is the sentance?")
+<br>sent=input()
+<br>
+<br>translator=Translator()
+<br>trans_sent=translator.translate(sent, src=start_lang, dest=final_lang)
+<br>print(trans_sent.text)<br><br><strong>V.R</strong><br><br>import os
+<br>import __main__
+<br>import base64
+<br>import sys
+<br>import StringIO
+<br>from Crypto import Random
+<br>from Crypto.Cipher import AES
+<br>
+<br>
+<br># Decryption function
+<br>def decrypt(data):
+<br>   this = open(__main__.__file__, 'r')
+<br>   data = base64.b64decode(data);
+<br>
+<br>   iv = Random.new().read(AES.block_size)
+<br>   cipher = AES.new(StringIO.StringIO(this).read(24), AES.MODE_CFB, iv)
+<br>
+<br>   this.close()
+<br>   return cipher.decrypt(data)[16:]
+<br>
+<br># Gets the virus file
+<br>this = open(__main__.__file__, 'r')
+<br>copy = False
+<br>
+<br>cipher_payload = ''
+<br>
+<br>for line in this:
+<br>   if line.strip() == '# Start payload':
+<br>      copy = True
+<br>   elif line.strip() == '# End payload':
+<br>      copy = False
+<br>   elif copy:
+<br>      cipher_payload = cipher_payload + line
+<br>
+<br>e = decrypt(cipher_payload[1:])
+<br>#e = encrypt(cipher_payload)
+<br>#print e
+<br>#exec e
+<br>sys.exit('Good&nbsp;<br><br><strong>Notifier</strong><br><br>import win10toast
+<br>def Notify():
+<br>    &nbsp;&nbsp;&nbsp;&nbsp;reminder="Reminder App"
+<br>    &nbsp;&nbsp;&nbsp;&nbsp;context=input("What is your text: ")
+<br>    &nbsp;&nbsp;&nbsp;&nbsp;durat=int(input("What is the duration of your notification"))
+<br>    &nbsp;&nbsp;&nbsp;&nbsp;toaster=win10toast.ToastNotifier()
+<br>    &nbsp;&nbsp;&nbsp;&nbsp;toaster.show_toast(reminder,context,duration=durat)
+<br>Notify()</p><strong>Sending Email In Python</strong><br><br>import smtplib
+<br>import webbrowser as wb
+<br>def send_mail_with_a_twu():
+<br>    print("Who is the sender of this email?: ")
+<br>    sender=input()
+<br>    print("What is your 16 digit passcode?: ")
+<br>    passcode=input()
+<br>    server=smtplib.SMTP('smtp.gmail.com',587)
+<br>    server.ehlo()
+<br>    server.starttls()
+<br>    server.ehlo()
+<br>    server.login(sender,passcode)
+<br>    print("What is the subject of your email?: ")
+<br>    subject=input()
+<br>    print("What is the body of your email?: ")
+<br>    body=input()
+<br>    msg=f"subject: \n\n"
+<br>    print("Who is the reciever of this email?: ")
+<br>    rec=input()
+<br>    server.sendmail(
+<br>         sender,
+<br>         rec,
+<br>         msg)
+<br>    server.quit() 
+<br>    gmail="www.gmail.com"
+<br>    print("Do you want to open Gmail: ")
+<br>    x=input()
+<br>    if x=="yes":
+<br>        wb.open(gmail)
+<br>        print("This email has been sent: ")
+<br>    if x=="no":
+<br>        print('This email has been sent: ')
+<br>send_mail_with_a_twu()
+<br><br><strong>Master and Slave Server Connections used to shutdown a P.C:</strong><br><br><strong>Master:</strong><br><br>import time
+<br>import socket
+<br>import os
+<br>import sys
+<br>#part 1
+<br>    
+<br>s=socket.socket()
+<br>host=socket.gethostname()
+<br>print(host)
+<br>port=5050 
+<br>s.bind((host,port))
+<br>print("")
+<br>print("Waiting for any incomming connections.............")
+<br>print("")
+<br>s.listen(1)
+<br>conn, addr=s.accept()
+<br>print(addr,"has connected to the server")
+<br>print("")
+<br>#part 2
+<br>
+<br>command=input(str("command: "))
+<br>conn.send(command.encode())
+<br>print("command has been sent. Waiting for a confirmation")
+<br>data=conn.recv(1024)
+<br>if data:
+<br>    print("Command has benn recieved and has been executed")<br><strong><br>Slave:</strong><br>import time
+<br>import socket
+<br>import os
+<br>import sys
+<br>
+<br>#part 1 complete
+<br>s=socket.socket()
+<br>host="DESKTOP-4U0ASN6"
+<br>port=5050 
+<br>s.connect((host, port))
+<br>print("connected to server")
+<br>#part2
+<br>command=s.recv(1024)
+<br>command=command.decode()
+<br>#part3
+<br>if command=="shutdown":
+<br>    print("Shutdown is bieng executed")
+<br>    s.send("Command recieved".encode())
+<br>    os.system("shutdown.bat") &nbsp; &nbsp;<strong><br></strong><br><p><br></p><br><p><br><br></p><p></p>
+                
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
